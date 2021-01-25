@@ -4,7 +4,7 @@ Flixter is an android app that lets users view a list of movies sourced from the
 
 Submitted by: Aldo Socarras
 
-Time spent: **2** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
