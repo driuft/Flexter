@@ -1,6 +1,6 @@
-# Unit 1 Project: Flixter
+# Unit 1 Project: Flixster
 
-Flixter is an android app that lets users view a list of movies sourced from the The Movie Database API.
+Flixster is an android app that lets users view a list of movies sourced from The Movie Database API.
 
 Submitted by: Aldo Socarras
 
