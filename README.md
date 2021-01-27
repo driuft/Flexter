@@ -10,16 +10,16 @@ Time spent: **4** hours spent in total
 
 The following **required** functionality is completed:
 
-* [X] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API
-* [X] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity
-* [X] Allow video posts to be played in full-screen using the YouTubePlayerView
+- [X] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API
+- [X] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity
+- [X] Allow video posts to be played in full-screen using the YouTubePlayerView
 
 The following **optional** features are implemented:
 
-* [X] Views should be responsive for both landscape/portrait mode
-* [ ] Display a nice default placeholder graphic for each image during loading
-* [X] Improve the user interface through styling and coloring
-* [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed
+- [X] Views should be responsive for both landscape/portrait mode
+- [ ] Display a nice default placeholder graphic for each image during loading
+- [X] Improve the user interface through styling and coloring
+- [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed
 - [ ] Implement a shared element transition when user clicks into the details of a movie
 - [ ] Trailers for popular movies are played automatically when the movie is selected
   - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately
