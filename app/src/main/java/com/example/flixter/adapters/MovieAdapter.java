@@ -16,6 +16,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.flixter.DetailActivity;
 import com.example.flixter.R;
 import com.example.flixter.models.Movie;
@@ -23,6 +26,8 @@ import com.example.flixter.models.Movie;
 import org.parceler.Parcels;
 
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
@@ -82,12 +87,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
                 // then imageUrl = back drop image
                 imageUrl = movie.getBackdropPath();
+                Glide.with(context).load(imageUrl).into(ivPoster);
             }
             else {
                 // else imageUrl = poster image
                 imageUrl = movie.getPosterPath();
+                Glide.with(context).load(imageUrl).circleCrop().transform(new RoundedCornersTransformation(50, 0)).into(ivPoster);
             }
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            // ORIGINAL - Glide.with(context).load(imageUrl).into(ivPoster);
 
             // 1. Register click listener on the whole row
             container.setOnClickListener(new View.OnClickListener() {
