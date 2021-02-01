@@ -1,65 +1,63 @@
-# Unit 1 Project: Flixster
+# Flix
+Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Flixster is an android app that lets users view a list of movies sourced from The Movie Database API.
+## Flix Part 2
 
-Submitted by: Aldo Socarras
+### User Stories
 
-Time spent: **4** hours spent in total
+#### REQUIRED (10pts)
 
-## User Stories
+- [X] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
+- [X] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
 
-The following **required** functionality is completed:
+#### BONUS
 
-- [X] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API
-- [X] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity
-- [X] Allow video posts to be played in full-screen using the YouTubePlayerView
+- [ ] Implement a shared element transition when user clicks into the details of a movie (1 point).
+- [ ] Trailers for popular movies are played automatically when the movie is selected (1 point).
+  - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
+  - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
+- [ ] Add a play icon overlay to popular movies to indicate that the movie can be played (1 point).
+- [ ] Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
+- [X] Add a rounded corners for the images using the Glide transformations. (1 point)
 
-The following **optional** features are implemented:
+### App Walkthough GIF
 
-- [X] Views should be responsive for both landscape/portrait mode
-- [ ] Display a nice default placeholder graphic for each image during loading
-- [X] Improve the user interface through styling and coloring
-- [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed
-- [ ] Implement a shared element transition when user clicks into the details of a movie
-- [ ] Trailers for popular movies are played automatically when the movie is selected
-  - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately
-  - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video
-- [ ] Add a play icon overlay to popular movies to indicate that the movie can be played
-- [ ] Apply the popular ButterKnife annotation library to reduce view boilerplate
-- [ ] Add a rounded corners for the images using the Glide transformations
+<img src="https://github.com/driuft/Flixster/blob/master/walkthrough-2.gif" width=250><br>
 
-The following **additional** features are implemented:
+### Notes
 
-* [ ] List anything else that you can get done to improve the app functionality!
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='https://github.com/driuft/Flixter/blob/master/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [ScreenToGif](https://www.screentogif.com/).
-
-## Notes
-
-No outstanding issues found.
+I had issues applying rounded edges to the movie posters. When applying the Glide transform method, it seemed that the margin was pushing other elements away from the image. When adjusting radius/margin values, no changes seem to correct the issues. I corrected the issue by applying the CircleCrop() method before configuring the RoundedCornersTransformation() method.
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
 
-## License
+---
 
-    Copyright [2021] [Aldo Socarras]
+## Flix Part 1
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+### User Stories
 
-        http://www.apache.org/licenses/LICENSE-2.0
+#### REQUIRED (10pts)
+- [X] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+#### BONUS
+- [X] (2pts) Views should be responsive for both landscape/portrait mode.
+   - [X] (1pt) In portrait mode, the poster image, title, and movie overview is shown.
+   - [X] (1pt) In landscape mode, the rotated alternate layout should use the backdrop image instead and show the title and movie overview to the right of it.
+
+- [ ] (2pts) Display a nice default [placeholder graphic](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
+- [X] (2pts) Improved the user interface by experimenting with styling and coloring.
+- [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
+
+### App Walkthough GIF
+
+<img src="https://github.com/driuft/Flixter/blob/master/walkthrough.gif" width=250><br>
+
+### Notes
+No outstanding issues found.
+
+### Open-source libraries used
+
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
