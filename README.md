@@ -1,7 +1,7 @@
-# Flix
-Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+# Flexter
+Flexter is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-## Flix Part 2
+## Flexter Part 2
 
 ### User Stories
 
@@ -34,7 +34,7 @@ I had issues applying rounded edges to the movie posters. When applying the Glid
 
 ---
 
-## Flix Part 1
+## Flexter Part 1
 
 ### User Stories
 
@@ -52,7 +52,7 @@ I had issues applying rounded edges to the movie posters. When applying the Glid
 
 ### App Walkthough GIF
 
-<img src="https://github.com/driuft/Flixter/blob/master/walkthrough.gif" width=250><br>
+<img src="https://github.com/driuft/Flexter/blob/master/walkthrough.gif" width=250><br>
 
 ### Notes
 No outstanding issues found.
